@@ -1,0 +1,80 @@
+.App {
+  text-align: center;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.main-view {
+  display: flex;
+}
+
+.cube-views {
+  text-align: center;
+}
+
+.controls {
+  margin-left: 25%;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.cube-1 {
+  margin: 15%;
+  display: flex;
+}
+
+.cube-2 {
+  margin: 25%;
+}
+
+.three-d-cube {
+  width: 60px;
+  height: 160px;
+  transform-style: preserve-3d;
+  transform: rotateX(240deg) rotateY(-10deg) rotateZ(-155deg);
+}
+
+.cube-1-face-1 {
+  width: 120px;
+  height: 120px;
+  background-color: white;
+  display: grid;
+  grid-template-columns: auto auto;
+  border: 6px solid black;
+}
+
+.cube-1-tile {
+  width: 60px;
+  height: 60px;
+  border: 1px solid black;
+  margin: 0px;
+  padding: 0px;
+}
+
+.side {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  border-radius: 10%;
+}
+
+.top {
+  transform: translate3D(73px, 10px, -150px) rotateY(180deg);
+}
+
+.front {
+  transform: translate3D(82px, -5px, 0) rotateX(90deg) rotateY(180deg);
+  transform-origin: bottom;
+}
+
+.left {
+  width: 60px;
+  transform: translate3D(60px, -10px, -65px) rotateY(90deg);
+  transform-origin: right;
+}
